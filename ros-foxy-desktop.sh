@@ -10,6 +10,8 @@ CHOOSE_ROS_DISTRO=foxy
 INSTALL_PACKAGE=desktop
 
 sudo apt-get update
+export DEBIAN_FRONTEND=noninteractive
+DEBIAN_FRONTEND=noninteractive sudo -E apt-get install -y keyboard-configuration
 sudo apt-get install -y curl gnupg2 lsb-release
 curl -Ls https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | sudo apt-key add -
 sudo sh -c 'echo "deb http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" > /etc/apt/sources.list.d/ros2-latest.list'

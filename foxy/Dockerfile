@@ -1,8 +1,7 @@
-#FROM dorowu/ubuntu-desktop-lxde-vnc:focal
 FROM nvidia/cuda:11.1-cudnn8-devel-ubuntu20.04
 LABEL maintainer="yosha.morheg@gmail.com>"
 
-ENV DEBIAN_FRONTEND noninteractive
+ENV DEBIAN_FRONTEND=noninteractive
 RUN echo "Set disable_coredump false" >> /etc/sudo.conf
 RUN apt-get update -q && \
     apt-get upgrade -yq && \
