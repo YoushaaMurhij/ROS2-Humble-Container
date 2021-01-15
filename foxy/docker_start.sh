@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd "$(dirname "$0")"
-
+cd ..
 workspace_dir=$PWD
 
 if [ "$(docker ps -aq -f status=exited -f name=ros2)" ]; then
