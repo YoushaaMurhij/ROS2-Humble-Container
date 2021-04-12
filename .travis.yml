@@ -4,7 +4,6 @@ services:
   - docker
 
 before_install:
-  - cd foxy
   - ./docker_build.sh 
 script:
   - ./docker_start.sh
