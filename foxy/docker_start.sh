@@ -9,7 +9,6 @@ if [ "$(docker ps -aq -f status=exited -f name=ros2)" ]; then
 fi
 
 docker run -it -d --rm \
-    --gpus all \
     --env="DISPLAY" \
     --env="QT_X11_NO_MITSHM=1" \
     --privileged \
