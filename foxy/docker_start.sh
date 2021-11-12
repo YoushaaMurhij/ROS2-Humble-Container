@@ -16,4 +16,4 @@ docker run -it -d --rm \
     --net "host" \
     -v /tmp/.X11-unix:/tmp/.X11-unix:rw \
     -v $workspace_dir/:/home/ros2/colcon_ws:rw \
-    x64foxy/ros2:latest
+    x64ros2/foxy:latest
